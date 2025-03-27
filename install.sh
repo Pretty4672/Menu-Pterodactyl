@@ -13,7 +13,7 @@ CYAN='\033[0;36m'
 check_license() {
     if [ -f "$LICENSE_FILE" ]; then
         LICENSE_KEY=$(cat "$LICENSE_FILE")
-        if [ "$LICENSE_KEY" == "HANCOKK" ]; then
+        if [ "$LICENSE_KEY" == "KRIZZ" ]; then
             return 0
         fi
     fi
@@ -27,12 +27,12 @@ display_message() {
     echo ""
     echo ""
     echo -e "${RED}"
-    echo "╭╮╮╱▔▔▔▔╲╭╭╮"
-    echo "╰╲╲▏▂╲╱▂▕╱╱╯"
-    echo " ┈┈╲▏▇▏▕▇▕╱┈┈"
-    echo " ┈┈╱╲▔▕▍▔╱╲┈┈"
-    echo " ╭╱╱ ▕╋╋╋╋▏╲╲╮"
-    echo "
+    echo "██╗  ██╗██████╗ ██╗███████╗███████╗"
+    echo "██║ ██╔╝██╔══██╗██║╚══███╔╝╚══███╔╝"
+    echo "█████╔╝ ██████╔╝██║  ███╔╝   ███╔╝"
+    echo "██╔═██╗ ██╔══██╗██║ ███╔╝   ███╔╝"
+    echo "██║  ██╗██║  ██║██║███████╗███████╗"
+    echo "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝"
     echo "" 
     echo "         ██╗  ██╗"
     echo "         ╚██╗██╔╝"
@@ -50,8 +50,8 @@ display_message() {
     echo -e "${RESET}"
     echo ""
     echo ""
-    echo -e "${BLUE}                    WHATSAPP : 62895364952866${RESET}"
-    echo -e "${YELLOW}                    YOUTUBE  : @HanCokk${RESET}"
+    echo -e "${BLUE}                    WHATSAPP : 6281235807940${RESET}"
+    echo -e "${YELLOW}                    YOUTUBE  : @krsna_081${RESET}"
     echo ""
 }
 
@@ -76,7 +76,7 @@ animate_text() {
 if check_license; then
     display_message
     install_software
-    animate_text "𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 HANCOKK"
+    animate_text "𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 KRIZZ"
 else
     echo "Mohon masukkan Lisensi Anda :"
     read -r LICENSE_KEY
@@ -85,7 +85,7 @@ else
     if [ $? -eq 0 ]; then
         display_message
         install_software
-        animate_text "𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 HANCOKK"
+        animate_text "𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 KRIZZ"
     else
         echo "Lisensi tidak valid."
         exit 1
@@ -896,7 +896,7 @@ check_license() {
     read -r LICENSE_KEY
     # Add the logic to verify the license key here.
     # This function should return 0 if the license is valid, and 1 otherwise.
-    if [ "$LICENSE_KEY" == "HANCOKK" ]; then
+    if [ "$LICENSE_KEY" == "KRIZZ" ]; then
         return 0
     else
         return 1
